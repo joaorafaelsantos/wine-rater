@@ -1,0 +1,36 @@
+{
+  "name": "Wine Rater via Vivino",
+  "description": "Get Vivino ratings for supermarket websites",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16-disabled.png",
+      "48": "icons/icon48-disabled.png",
+      "128": "icons/icon128-disabled.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.continente.pt/*",
+        "https://*.auchan.pt/*",
+        "https://*.elcorteingles.pt/*",
+        "https://*.mercadao.pt/*",
+        "https://*.minipreco.pt/*"
+      ],
+
+      "js": ["utils.js", "providers.js"]
+    }
+  ]
+}
