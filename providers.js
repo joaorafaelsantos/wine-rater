@@ -24,14 +24,6 @@ const PROVIDERS = [
     },
   },
   {
-    name: "Pingo Doce",
-    url: "mercadao.pt",
-    selectors: {
-      productName: ".pdo-product-detail h2",
-      ratingResult: ".pdo-product-detail h2",
-    },
-  },
-  {
     name: "Minipreço",
     url: "minipreco.pt",
     selectors: {

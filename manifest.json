@@ -1,7 +1,7 @@
 {
   "name": "Wine Rater via Vivino",
   "description": "Get Vivino ratings for supermarket websites",
-  "version": "1.0",
+  "version": "1.0.0",
   "manifest_version": 3,
   "permissions": ["tabs", "activeTab", "scripting"],
   "host_permissions": ["http://*/*", "https://*/*"],
@@ -26,7 +26,6 @@
         "https://*.continente.pt/*",
         "https://*.auchan.pt/*",
         "https://*.elcorteingles.pt/*",
-        "https://*.mercadao.pt/*",
         "https://*.minipreco.pt/*"
       ],
 
